@@ -157,7 +157,7 @@
                     <article class="row">
                         <div class="project-wrapper__demo">
                             <h3 class="project-wrapper__demo-title">
-                                Project Title
+                                Paw Wow
                             </h3>
                             <a
                                 href="#"
@@ -181,7 +181,7 @@
                                     >See Live</a
                                 >
                                 <a
-                                    href="#"
+                                    href="https://github.com/ikenna-porter/paw-wow"
                                     target="_blank"
                                     class="cta-btn text-color-main"
                                     >Source Code</a
@@ -193,22 +193,22 @@
                                     <li>HTML5</li>
                                     <li>CSS3</li>
                                     <li>Javascript</li>
-                                    <li>Python</li>
-                                    <li>Django</li>
                                     <li>React</li>
+                                    <li>Python</li>
+                                    <li>FastAPI</li>
+                                    <li>PostgreSQL</li>
+                                    <li>Websockets</li>
+                                    <li>Docker</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="project-wrapper__text">
                             <div class="role">
-                                <h3>My Role</h3>
+                                <h3>Description</h3>
                                 <p class="project-wrapper__text-info">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Deleniti voluptas, sit nam
-                                    perspiciatis tempore aspernatur ullam
-                                    necessitatibus impedit repellendus vero sed
-                                    ipsa eos beatae ab sint saepe nostrum! Enim,
-                                    perferendis.
+                                    Paw Wow is a social media platform for dog owners. It's basic functionality include authentication, direct
+                                    messaging, profile creation and friend requests. I worked on a team with four other developers to create this
+                                    application.
                                 </p>
                             </div>
                             <div class="difficulties">
@@ -235,11 +235,12 @@
                             </div>
                             <div class="features">
                                 <h3>Notable Features</h3>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
+                                <li>Authentication</li>
+                                <li>Direct Messaging</li>
+                                <li>RESTful APIs</li>
+                                <li>Microservices</li>
+                                <li>React Hooks</li>
+                                <li>Unit Tests</li>
                             </div>
                         </div>
                     </article>
@@ -249,7 +250,7 @@
                     <article class="row">
                         <div class="project-wrapper__demo">
                             <h3 class="project-wrapper__demo-title">
-                                Project Title
+                                Car Buffs
                             </h3>
                             <a
                                 href="#"
@@ -273,7 +274,7 @@
                                     >See Live</a
                                 >
                                 <a
-                                    href="#"
+                                    href="https://github.com/ikenna-porter/car-buffs"
                                     target="_blank"
                                     class="cta-btn text-color-main"
                                     >Source Code</a
@@ -288,50 +289,48 @@
                                     <li>Python</li>
                                     <li>Django</li>
                                     <li>React</li>
+                                    <li>Docker</li>
+                                    <li>Bootstrap</li>
+                                    <li>Insomnia</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="project-wrapper__text">
                             <div class="role">
-                                <h3>My Role</h3>
+                                <h3>Description</h3>
                                 <p class="project-wrapper__text-info">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Deleniti voluptas, sit nam
-                                    perspiciatis tempore aspernatur ullam
-                                    necessitatibus impedit repellendus vero sed
-                                    ipsa eos beatae ab sint saepe nostrum! Enim,
-                                    perferendis.
+                                    Car Buffs is a car services platform that facilitates new car purchases and the scheduling of vehicle repairs.
+                                    The application's back-end was divided into three distinct microservices (inventory, sales, services)--each one
+                                    modeled to match the business domain of a car services business.
                                 </p>
                             </div>
                             <div class="difficulties">
                                 <h3>Project Difficulties</h3>
                                 <p class="project-wrapper__text-info">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Deleniti voluptas, sit nam
-                                    perspiciatis tempore aspernatur ullam
-                                    necessitatibus impedit repellendus vero sed
-                                    ipsa eos beatae ab sint saepe nostrum! Enim,
-                                    perferendis.
+                                    The most challenging aspect of this project was enabling message passing between the microservices. Since each 
+                                    microservice occupied its own container, it took a while for me to establish a connection between them 
+                                    so that they could effectively communicate with one another. More specifically, the sales and services microservices
+                                    needed to communicate with the inventory microservice to determine whether a particular vehicle was in stock and
+                                    whether or not it originated from the dealership.
                                 </p>
                             </div>
                             <div class="solutions">
                                 <h3>My Solution</h3>
                                 <p class="project-wrapper__text-info">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Deleniti voluptas, sit nam
-                                    perspiciatis tempore aspernatur ullam
-                                    necessitatibus impedit repellendus vero sed
-                                    ipsa eos beatae ab sint saepe nostrum! Enim,
-                                    perferendis.
+                                    In order to solve this problem my teammate and I implemented a short polling function within the sales and services
+                                    microservices (both of which acted as clients). These functions used RESTful APIS to make requests to the inventory 
+                                    microservice every minute. Once they received the response body--which comprised of a list of all the cars in stock
+                                    --they would parse through it to retrieve and update all relevant information.
                                 </p>
                             </div>
                             <div class="features">
                                 <h3>Notable Features</h3>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
+                                <li>Domain-Driven Design</li>
+                                <li>MVC Build</li>
+                                <li>Microservices</li>
+                                <li>Message Passing</li>
+                                <li>React Class Components</li>
+                                <li>RESTful APIs</li>
                             </div>
                         </div>
                     </article>
@@ -341,7 +340,90 @@
                     <article class="row">
                         <div class="project-wrapper__demo">
                             <h3 class="project-wrapper__demo-title">
-                                Project Title
+                                Mr. Librarian
+                            </h3>
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="thumbnail rounded">
+                                    <img
+                                        src="./assets/project.png"
+                                        class="img-fluid"
+                                        alt="Project Image"
+                                    />
+                                </div>
+                            </a>
+                            <div class="project-wrapper__demo-btns">
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="cta-btn cta-btn--hero cta-btn--projects"
+                                    >See Live</a
+                                >
+                                <a
+                                    href="https://github.com/ikenna-porter/mr-librarian"
+                                    target="_blank"
+                                    class="cta-btn text-color-main"
+                                    >Source Code</a
+                                >
+                            </div>
+                            <div class="technologies-used">
+                                <h3>Technologies Used</h3>
+                                <ul>
+                                    <li>Vanilla Python</li>
+                                    <li>Requests Library</li>
+                                    <li>Postman</li>
+                                    <li>Argparse Library</li>
+                                    <li>Unittest Library</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-wrapper__text">
+                            <div class="role">
+                                <h3>Description</h3>
+                                <p class="project-wrapper__text-info">
+                                    Mr. Librarian is a command-line application that uses the Google Book's API to retrieve book information for users.
+                                    The application also allows users to store their favorite books in a reading list for access in the future.
+                                </p>
+                            </div>
+                            <div class="difficulties">
+                                <h3>Project Difficulties</h3>
+                                <p class="project-wrapper__text-info">
+                                    The most difficult part of this project involved writing the unit tests for the database queries and for the function
+                                    responsible for making the API call. When running the tests, I noticed that they actually made interacted with the
+                                    database and that they made the API call. This resulted in erroneous data in the database and it meant that my tests
+                                    were dependent on the state of external dependencies.
+                                </p>
+                            </div>
+                            <div class="solutions">
+                                <h3>My Solution</h3>
+                                <p class="project-wrapper__text-info">
+                                    The solution to this problem was to introduce patches from the unittest.mock library. These patches essentially allowed the
+                                    tests to create a mock object that would act as a substitute for the database and the request call. Now, instead of actually
+                                    The creation of these "dummy" objects allowed the unit tests to isolate and test the functionality of each method, 
+                                    without having to worry about the behavior of the external dependencies.
+                                </p>
+                            </div>
+                            <div class="features">
+                                <h3>Notable Features</h3>
+                                <li>Object-Oriented Programming</li>
+                                <li>SOLID Design Principles</li>
+                                <li>Third-Party API Integration</li>
+                                <li>Unit Tests</li>
+                                <li>SQLite Database</li>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- /END Project -->
+
+                    <!-- Each .row is a project -->
+                    <article class="row">
+                        <div class="project-wrapper__demo">
+                            <h3 class="project-wrapper__demo-title">
+                                Task-Done
                             </h3>
                             <a
                                 href="#"
@@ -376,34 +458,25 @@
                                 <ul>
                                     <li>HTML5</li>
                                     <li>CSS3</li>
-                                    <li>Javascript</li>
+                                    <li>Bootstrap</li>
                                     <li>Python</li>
                                     <li>Django</li>
-                                    <li>React</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="project-wrapper__text">
                             <div class="role">
-                                <h3>My Role</h3>
+                                <h3>Description</h3>
                                 <p class="project-wrapper__text-info">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Deleniti voluptas, sit nam
-                                    perspiciatis tempore aspernatur ullam
-                                    necessitatibus impedit repellendus vero sed
-                                    ipsa eos beatae ab sint saepe nostrum! Enim,
-                                    perferendis.
+                                    Task-Done is a task management application that performs all four of the CRUD functionalities. It does so using 
+                                    Django's ORM, which interacts with a SQLite database.
                                 </p>
                             </div>
                             <div class="difficulties">
                                 <h3>Project Difficulties</h3>
                                 <p class="project-wrapper__text-info">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Deleniti voluptas, sit nam
-                                    perspiciatis tempore aspernatur ullam
-                                    necessitatibus impedit repellendus vero sed
-                                    ipsa eos beatae ab sint saepe nostrum! Enim,
-                                    perferendis.
+                                    Given that this was my first project that used any kind of framework, the most difficult part was definitely
+                                    acclimating myself to Django--which can be very opinionated at time.
                                 </p>
                             </div>
                             <div class="solutions">
@@ -419,15 +492,15 @@
                             </div>
                             <div class="features">
                                 <h3>Notable Features</h3>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
-                                <li>Test</li>
+                                <li>MVC Build</li>
+                                <li>Templates</li>
+                                <li>Django's Object Relational Mapper</li>
+                                <li>Authentication</li>
+                                <li>Class/Function-Based Views</li>
+                                <li>CRUD Functionality</li>
                             </div>
                         </div>
                     </article>
-                    <!-- /END Project -->
                 </div>
             </div>
         </section>
@@ -483,16 +556,6 @@
                         <i class="fa fa-github"></i>
                     </a>
                 </div>
-                <!-- <hr /> -->
-                <!-- <p class="footer__text">
-          &copy; <span id="year"></span> - Template by
-          <a
-            href="https://github.com/AnilSeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Anil Seervi</a
-          >. <br />Made with &hearts;
-        </p> -->
             </div>
         </footer>
         <!-- END Footer Section -->
