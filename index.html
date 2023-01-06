@@ -137,7 +137,7 @@
                             development team.
                         </p>
                         <span class="about-wrapper__cta">
-                            <a href="#" class="cta-btn cta-btn--resume"
+                            <a href="assets/ikenna-porter-resume.pdf" target="_blank" class="cta-btn cta-btn--resume"
                                 >View Resume</a
                             >
                         </span>
@@ -153,6 +153,89 @@
                 <div class="project-wrapper">
                     <h2 class="section-title dark-blue-text">Projects</h2>
 
+                   <!-- Each .row is a project -->
+                   <article class="row">
+                    <div class="project-wrapper__demo">
+                        <h3 class="project-wrapper__demo-title">
+                            Mr. Librarian
+                        </h3>
+                        <a
+                            href="https://github.com/ikenna-porter/mr-librarian"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div class="thumbnail rounded">
+                                <img
+                                    src="./assets/mr-librarian-list.png"
+                                    class="img-fluid"
+                                    alt="Project Image"
+                                />
+                            </div>
+                        </a>
+                        <!-- <div class="project-wrapper__demo-btns">
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="cta-btn cta-btn--hero cta-btn--projects"
+                                >See Live</a
+                            >
+                            <a
+                                href="https://github.com/ikenna-porter/mr-librarian"
+                                target="_blank"
+                                class="cta-btn text-color-main"
+                                >Source Code</a
+                            >
+                        </div> -->
+                        <div class="technologies-used" style="margin-top: 20px">
+                            <h3>Technologies Used</h3>
+                            <ul>
+                                <li>Vanilla Python</li>
+                                <li>Requests Library</li>
+                                <li>Postman</li>
+                                <li>Argparse Library</li>
+                                <li>Unittest Library</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-wrapper__text">
+                        <div class="role">
+                            <h3>Description</h3>
+                            <p class="project-wrapper__text-info">
+                                Mr. Librarian is a command-line application that uses the Google Book's API to retrieve book information for users.
+                                The application also allows users to store their favorite books in a reading list for access in the future.
+                            </p>
+                        </div>
+                        <div class="difficulties">
+                            <h3>Project Difficulties</h3>
+                            <p class="project-wrapper__text-info">
+                                The most difficult part of this project involved writing the unit tests for the database queries and for the function
+                                responsible for making the API call. When running the tests, I noticed that they actually made interacted with the
+                                database and that they made the API call. This resulted in erroneous data in the database and it meant that my tests
+                                were dependent on the state of external dependencies.
+                            </p>
+                        </div>
+                        <div class="solutions">
+                            <h3>My Solution</h3>
+                            <p class="project-wrapper__text-info">
+                                The solution to this problem was to introduce patches from the unittest.mock library. These patches essentially allowed the
+                                tests to create a mock object that would act as a substitute for the database and the request call. Now, instead of actually
+                                The creation of these "dummy" objects allowed the unit tests to isolate and test the functionality of each method, 
+                                without having to worry about the behavior of the external dependencies.
+                            </p>
+                        </div>
+                        <div class="features">
+                            <h3>Notable Features</h3>
+                            <li>Object-Oriented Programming</li>
+                            <li>SOLID Design Principles</li>
+                            <li>Third-Party API Integration</li>
+                            <li>Unit Tests</li>
+                            <li>SQLite Database</li>
+                        </div>
+                    </div>
+                </article>
+                <!-- /END Project -->
+
                     <!-- Each .row is a project -->
                     <article class="row">
                         <div class="project-wrapper__demo">
@@ -160,19 +243,19 @@
                                 Paw Wow
                             </h3>
                             <a
-                                href="#"
+                                href="https://gitlab.com/ikenna-porter/paw-wow"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <div class="thumbnail rounded">
                                     <img
-                                        src="./assets/project.png"
+                                        src="./assets/paw-wow-profile.png"
                                         class="img-fluid"
                                         alt="Project Image"
                                     />
                                 </div>
                             </a>
-                            <div class="project-wrapper__demo-btns">
+                            <!-- <div class="project-wrapper__demo-btns">
                                 <a
                                     href="#"
                                     target="_blank"
@@ -186,8 +269,8 @@
                                     class="cta-btn text-color-main"
                                     >Source Code</a
                                 >
-                            </div>
-                            <div class="technologies-used">
+                            </div> -->
+                            <div class="technologies-used" style="margin-top: 20px">
                                 <h3>Technologies Used</h3>
                                 <ul>
                                     <li>HTML5</li>
@@ -214,32 +297,29 @@
                             <div class="difficulties">
                                 <h3>Project Difficulties</h3>
                                 <p class="project-wrapper__text-info">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Deleniti voluptas, sit nam
-                                    perspiciatis tempore aspernatur ullam
-                                    necessitatibus impedit repellendus vero sed
-                                    ipsa eos beatae ab sint saepe nostrum! Enim,
-                                    perferendis.
+                                    The greatest difficulty I faced for this project was designing the database, particularly for messaging. Trying to figure
+                                    which tables I would need, and more importantly, how those tables would relate to one another was quite challenging. The
+                                    fact that this was also my first time working with SQL made the task that much more difficult.
                                 </p>
                             </div>
                             <div class="solutions">
                                 <h3>My Solution</h3>
                                 <p class="project-wrapper__text-info">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Deleniti voluptas, sit nam
-                                    perspiciatis tempore aspernatur ullam
-                                    necessitatibus impedit repellendus vero sed
-                                    ipsa eos beatae ab sint saepe nostrum! Enim,
-                                    perferendis.
+                                    In the end, I decided the best approach would be to create a messages table and a conversations table. The conversations
+                                    table would reference a conversation between two users, while the messages table would store instances of every message
+                                    sent within the application. Each message instance also has a foreign key that links it to a particular conversation 
+                                    (using the conversation's ID). This way, whenever a user accesses their chats, an API call would be made to retrieve a
+                                    list of all their conversations. Likewise, once a user selects a conversation, all of the messages associated with that
+                                    conversation will be fetched.
                                 </p>
                             </div>
                             <div class="features">
                                 <h3>Notable Features</h3>
+                                <li>Microservices</li>
+                                <li>React Hooks</li>
                                 <li>Authentication</li>
                                 <li>Direct Messaging</li>
                                 <li>RESTful APIs</li>
-                                <li>Microservices</li>
-                                <li>React Hooks</li>
                                 <li>Unit Tests</li>
                             </div>
                         </div>
@@ -253,19 +333,19 @@
                                 Car Buffs
                             </h3>
                             <a
-                                href="#"
+                                href="https://gitlab.com/ikenna-porter/car-buffs"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <div class="thumbnail rounded">
                                     <img
-                                        src="./assets/project.png"
+                                        src="./assets/carbuffs-homepage.png"
                                         class="img-fluid"
                                         alt="Project Image"
                                     />
                                 </div>
                             </a>
-                            <div class="project-wrapper__demo-btns">
+                            <!-- <div class="project-wrapper__demo-btns">
                                 <a
                                     href="#"
                                     target="_blank"
@@ -279,8 +359,8 @@
                                     class="cta-btn text-color-main"
                                     >Source Code</a
                                 >
-                            </div>
-                            <div class="technologies-used">
+                            </div> -->
+                            <div class="technologies-used" style="margin-top: 20px">
                                 <h3>Technologies Used</h3>
                                 <ul>
                                     <li>HTML5</li>
@@ -340,105 +420,22 @@
                     <article class="row">
                         <div class="project-wrapper__demo">
                             <h3 class="project-wrapper__demo-title">
-                                Mr. Librarian
-                            </h3>
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <div class="thumbnail rounded">
-                                    <img
-                                        src="./assets/project.png"
-                                        class="img-fluid"
-                                        alt="Project Image"
-                                    />
-                                </div>
-                            </a>
-                            <div class="project-wrapper__demo-btns">
-                                <a
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="cta-btn cta-btn--hero cta-btn--projects"
-                                    >See Live</a
-                                >
-                                <a
-                                    href="https://github.com/ikenna-porter/mr-librarian"
-                                    target="_blank"
-                                    class="cta-btn text-color-main"
-                                    >Source Code</a
-                                >
-                            </div>
-                            <div class="technologies-used">
-                                <h3>Technologies Used</h3>
-                                <ul>
-                                    <li>Vanilla Python</li>
-                                    <li>Requests Library</li>
-                                    <li>Postman</li>
-                                    <li>Argparse Library</li>
-                                    <li>Unittest Library</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="project-wrapper__text">
-                            <div class="role">
-                                <h3>Description</h3>
-                                <p class="project-wrapper__text-info">
-                                    Mr. Librarian is a command-line application that uses the Google Book's API to retrieve book information for users.
-                                    The application also allows users to store their favorite books in a reading list for access in the future.
-                                </p>
-                            </div>
-                            <div class="difficulties">
-                                <h3>Project Difficulties</h3>
-                                <p class="project-wrapper__text-info">
-                                    The most difficult part of this project involved writing the unit tests for the database queries and for the function
-                                    responsible for making the API call. When running the tests, I noticed that they actually made interacted with the
-                                    database and that they made the API call. This resulted in erroneous data in the database and it meant that my tests
-                                    were dependent on the state of external dependencies.
-                                </p>
-                            </div>
-                            <div class="solutions">
-                                <h3>My Solution</h3>
-                                <p class="project-wrapper__text-info">
-                                    The solution to this problem was to introduce patches from the unittest.mock library. These patches essentially allowed the
-                                    tests to create a mock object that would act as a substitute for the database and the request call. Now, instead of actually
-                                    The creation of these "dummy" objects allowed the unit tests to isolate and test the functionality of each method, 
-                                    without having to worry about the behavior of the external dependencies.
-                                </p>
-                            </div>
-                            <div class="features">
-                                <h3>Notable Features</h3>
-                                <li>Object-Oriented Programming</li>
-                                <li>SOLID Design Principles</li>
-                                <li>Third-Party API Integration</li>
-                                <li>Unit Tests</li>
-                                <li>SQLite Database</li>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- /END Project -->
-
-                    <!-- Each .row is a project -->
-                    <article class="row">
-                        <div class="project-wrapper__demo">
-                            <h3 class="project-wrapper__demo-title">
                                 Task-Done
                             </h3>
                             <a
-                                href="#"
+                                href="https://github.com/ikenna-porter/task-done"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <div class="thumbnail rounded">
                                     <img
-                                        src="./assets/project.png"
+                                        src="./assets/task-done-homepage.png"
                                         class="img-fluid"
                                         alt="Project Image"
                                     />
                                 </div>
                             </a>
-                            <div class="project-wrapper__demo-btns">
+                            <!-- <div class="project-wrapper__demo-btns">
                                 <a
                                     href="#"
                                     target="_blank"
@@ -452,8 +449,8 @@
                                     class="cta-btn text-color-main"
                                     >Source Code</a
                                 >
-                            </div>
-                            <div class="technologies-used">
+                            </div> -->
+                            <div class="technologies-used" style="margin-top: 20px">
                                 <h3>Technologies Used</h3>
                                 <ul>
                                     <li>HTML5</li>
@@ -482,12 +479,9 @@
                             <div class="solutions">
                                 <h3>My Solution</h3>
                                 <p class="project-wrapper__text-info">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Deleniti voluptas, sit nam
-                                    perspiciatis tempore aspernatur ullam
-                                    necessitatibus impedit repellendus vero sed
-                                    ipsa eos beatae ab sint saepe nostrum! Enim,
-                                    perferendis.
+                                    My solution to this problem was simply to study the MVC design pattern, so that
+                                    I could have a deeper understanding of what was happening on a step-by-step basis
+                                    as the user interacted with the application.
                                 </p>
                             </div>
                             <div class="features">
